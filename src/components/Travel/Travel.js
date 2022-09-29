@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
 import  Image from '../../images/f.png';
 import './Travel.css';
+import Swal from 'sweetalert2';
 
 const Travel = () => {
     const [activities, setActivities] = useState([]);
@@ -28,6 +29,14 @@ const Travel = () => {
         }
     }
 
+    const handleActivity = (id) => {
+        Swal.fire(
+            'Good job!',
+            'You clicked the button!',
+            'success'
+        )
+    }
+    
     return (
         <div>
             <div className="travel-info">
@@ -76,7 +85,7 @@ const Travel = () => {
                         <h2 className='title'>Travel Details</h2>
                         <span className='travel-time'>Travel Time : {travel} days</span>
                         <span className='travel-time'>Break Time : {time}m</span>
-                        <button className='activity-button'>Activity Completed</button>
+                        <button className='activity-button' onClick={() => handleActivity()}>Activity Completed</button>
                     </div>
                 </div>
             </div>
