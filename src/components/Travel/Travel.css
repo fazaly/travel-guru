@@ -107,3 +107,42 @@
 .activity-button:hover{
     background-color: #6192AC;
 }
+@media only screen and (max-width:688px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .travel-activities {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .travel-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .activities-info{
+        width: 415px;
+        height: 600px;
+    }
+    .activities-info img{
+        width: 400px;
+        height: 400px;
+        border-radius: 8px;
+        margin: 7px;
+    }
+    .about-me-container {
+        padding: 0px 50px;
+        margin-top: 20px;
+        width: 300px;
+    }
+    .activity-button{
+        width: 80%;
+        margin-right: 150px;
+    }
+    .ans-cart {
+        width: 250px;
+
+    }
+}
