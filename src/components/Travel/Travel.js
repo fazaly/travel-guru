@@ -36,7 +36,7 @@ const Travel = () => {
             'success'
         )
     }
-    
+
     return (
         <div>
             <div className="travel-info">
@@ -54,22 +54,22 @@ const Travel = () => {
                     }
                 </div>
                 <div className="about-me-container">
-                    <div className="my-info">
+                    <div className="my-info-title">
                         <img className='my-img' src={Image} alt="" />
                         <p className='my-name'>Fazaly Rabbi</p>
                     </div>
-                    <div className="detalis">
-                        <div className="details-info">
-                            <p>75<small>kg</small> </p>
-                            <p><small>Weight</small></p>
+                    <div className="info">
+                        <div className='my-info'>
+                            <h4>65 <small>kg</small> </h4>
+                            <p>Weight</p>
                         </div>
-                        <div className="details-info">
-                            <p>5.6</p>
-                            <p><small>Height</small></p>
+                        <div className='my-info'>
+                            <h4>5.6"</h4>
+                            <p>Height</p>
                         </div>
-                        <div className="details-info">
-                            <p>25<small>yrs</small> </p>
-                            <p><small>Age</small></p>
+                        <div className='my-info'>
+                            <h4>28 <small>years</small> </h4>
+                            <p>Age</p>
                         </div>
                     </div>
                     <div className="break-info">

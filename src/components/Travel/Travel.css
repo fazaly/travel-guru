@@ -23,15 +23,18 @@
 }
 .about-me-container{
     border: 1px solid gray;
+    height: 700px;
+    border-radius: 8px;
+    position: relative;
 }
-.my-info{
+.my-info-title{
     display: flex;
     align-items: center;
 }
 .my-img{
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
     padding: 10px;
 }
 .my-name{
@@ -39,14 +42,14 @@
     font-size: 21px;
     font-weight: 700;
 }
-.details{
-    background-color: #F2F4FA;
+.info {
+    background-color: #D9D9DB;
     padding: 10px 5px;
-    border: 1px solid #F2F4FA;
     border-radius: 10px;
     display: flex;
 }
-.details-info{
+
+.my-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,16 +93,19 @@
 }
 
 .activity-button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     margin-top: 40px;
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: 0px 0px 8px 8px;
     color: white;
     background-color: #8E073C;
     font-size: 20px;
     border: none;
 }
 .activity-button:hover{
-    background-color: #F75431;
+    background-color: #6192AC;
 }
 @media screen and (max-width:720px) {
     .travel-activities{
