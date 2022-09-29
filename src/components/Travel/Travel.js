@@ -19,15 +19,15 @@ const Travel = () => {
 
     const handleBreakTime = (time) => {
         setTime(time);
-        const getTime = localStorage.getItem('Time')
-        const timeValue = JSON.parse(getTime)
-        if (timeValue) {
-            console.log('Acee');
-        }
-        else {
-            console.log('nai');
-        }
+        localStorage.setItem("Time", time)
     }
+
+    useEffect(() => {
+        const brTime = localStorage.getItem("Time")
+        if(brTime) {
+            setTime(brTime)
+        }
+    }, [])
 
     const handleActivity = (id) => {
         Swal.fire(

@@ -107,17 +107,3 @@
 .activity-button:hover{
     background-color: #6192AC;
 }
-@media screen and (max-width:720px) {
-    .travel-activities{
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media screen and (max-width:920px) {
-    .travel-activities{
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        align-items: center;
-    }
-}
