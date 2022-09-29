@@ -1,7 +1,7 @@
 import React from 'react';
 import './Activities.css'
 
-const Activities = ({activity}) => {
+const Activities = ({activity, onAddToList}) => {
     const {name, img, details, day} = activity;
     return (
         <div className='activities-info'>
@@ -9,9 +9,9 @@ const Activities = ({activity}) => {
             <div className='activity-details'>
                 <h4 className='activity-name'>{name}</h4>
                 <p>Details: {details.slice(0, 60)+ "..." }</p>
-                <p>Day-Duration: {day}</p>
+                <p>Day-Duration: {day} days</p>
             </div>
-            <button className='btn-list'><p className='list-text'>Add To List</p></button>
+            <button onClick={() => onAddToList(day)} className='btn-list'><p className='list-text'>Add To List</p></button>
         </div>
     );
 };

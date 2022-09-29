@@ -7,27 +7,78 @@ import './Travel.css';
 
 const Travel = () => {
     const [activities, setActivities] = useState([]);
+    const [time, setTime] = useState(0);
+    const [travel, setTravel] = useState(0);
+
     useEffect(() => {
         fetch('travel.json')
         .then(res => res.json())
         .then(data => setActivities(data))
     }, [])
+
+    const handleBreakTime = (time) => {
+        setTime(time);
+        const getTime = localStorage.getItem('Time')
+        const timeValue = JSON.parse(getTime)
+        if (timeValue) {
+            console.log('Acee');
+        }
+        else {
+            console.log('nai');
+        }
+    }
+
     return (
-        <div className='travel-container'>
+        <div>
             <div className="travel-info">
                 <FontAwesomeIcon className='icon' icon={faEarthAmericas}></FontAwesomeIcon>
                 <h1 className='travel-title'>Travel-Guides</h1>
             </div>
-            <div className="about-me-container">
-                
-            </div>
-            <div className="travel-activities">
-                {
-                    activities.map(activity => <Activities
-                        key={activity.id}
-                        activity={activity}
-                    ></Activities>)
-                }
+            <div className='travel-container'>
+                <div className="travel-activities">
+                    {
+                        activities.map(activity => <Activities
+                            key={activity.id}
+                            activity={activity}
+                            onAddToList={(time) => setTravel(travel + time)}
+                        ></Activities>)
+                    }
+                </div>
+                <div className="about-me-container">
+                    <div className="my-info">
+                        <img className='my-img' src={Image} alt="" />
+                        <p className='my-name'>Fazaly Rabbi</p>
+                    </div>
+                    <div className="detalis">
+                        <div className="details-info">
+                            <p>75<small>kg</small> </p>
+                            <p><small>Weight</small></p>
+                        </div>
+                        <div className="details-info">
+                            <p>5.6</p>
+                            <p><small>Height</small></p>
+                        </div>
+                        <div className="details-info">
+                            <p>25<small>yrs</small> </p>
+                            <p><small>Age</small></p>
+                        </div>
+                    </div>
+                    <div className="break-info">
+                        <h2 className='title'>Add a break</h2>
+                        <div className="break-button">
+                            <button className='btn-break' onClick={() => handleBreakTime(10)}>10m</button>
+                            <button className='btn-break' onClick={() => handleBreakTime(20)}>20m</button>
+                            <button className='btn-break' onClick={() => handleBreakTime(30)}>30m</button>
+                            <button className='btn-break' onClick={() => handleBreakTime(40)}>40m</button>
+                        </div>
+                    </div>
+                    <div className="travel-details">
+                        <h2 className='title'>Travel Details</h2>
+                        <span className='travel-time'>Travel Time : {travel} days</span>
+                        <span className='travel-time'>Break Time : {time}m</span>
+                        <button className='activity-button'>Activity Completed</button>
+                    </div>
+                </div>
             </div>
         </div>
     );
