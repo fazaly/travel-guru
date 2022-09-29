@@ -1,0 +1,44 @@
+.activities-info{
+    width: 300px;
+    height: 500px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    box-shadow: 4px 4px 8px #95A0A7;
+    position: relative;
+}
+.activities-info img{
+    width: 286px;
+    height: 286px;
+    border-radius: 8px;
+    margin: 7px;
+}
+.activity-details{
+    padding: 10px;
+    margin-top: -20px;
+}
+.activity-name{
+    font-size: 17px;
+    margin-top: 5px;
+}
+.btn-list{
+    width: 100%;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+    background-color: #C52632;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-list:hover{
+    background-color: #1A4D2E;
+    color: #FFFFFF;
+}
+.list-text{
+    font-size: 15px;
+    font-weight: 800;
+}

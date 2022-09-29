@@ -1,9 +1,10 @@
 import './App.css';
+import Travel from './components/Travel/Travel';
 
 function App() {
   return (
     <div className="App">
-      <h1>Travelling App</h1>
+      <Travel></Travel>
     </div>
   );
 }

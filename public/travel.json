@@ -4,41 +4,41 @@
         "name": "Wasa Crispbread",
         "details": "Carrying a small travel steamer with you is especially helpful when travelling for a long period of time. Clothes easily get crumpled whilst they are squished in a backpack or suitcase, and not all hotels will have an iron or steamer that you can use.",
         "img": "https://images.unsplash.com/photo-1664374170305-31a1630b2038?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        "time-required": "30s"
+        "day": 1
     },
     {
         "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
         "name": "Al Elmes",
         "details": "Carrying a portable battery with you at all times is one of the best things to do whilst you travel. They are extremely helpful when it comes to dead devices like a laptop, ipod or phone.",
         "img": "https://images.unsplash.com/photo-1616394585067-d3e824140aa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        "time-required": "30s"
+        "day": 1
     },
     {
         "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
         "name": "Engin akyurt",
         "details": "When it comes to travel, our bodies and skin can take a bit of a beating. Hiking under the midday sun, swimming in the ocean and sweating because of the heat can all cause skin problems. We know travel is supposed to be relaxing.",
         "img": "https://images.unsplash.com/photo-1613356522023-e95206f99214?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-        "time-required": "30s"
+        "day": 1
     },
     {
         "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
         "name": "Visualsofdana",
         "details": "Now of course this isn't a must, but taking photographs whilst travelling can give you incredible memories to look back on. We absolutely love taking photographs during our tours, as it reminds us of the beautiful moments we have whilst travelling and exploring with you guys.",
         "img": "https://images.unsplash.com/photo-1541438633571-9578b70ae5bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80",
-        "time-required": "30s"
+        "day": 1
     },
     {
         "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
         "name": "Jyotirmoy Gupta",
         "details": "This one links to our 4th essential item! If you are travelling long term, carrying a hard drive with you is a must. If you take photographs as often as us then your camera or phone will become full pretty quickly, and the photographs will need somewhere to go.",
         "img": "https://images.unsplash.com/photo-1598394299519-65c374fd683d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "time-required": "30s"
+        "day": 1
     },
     {
         "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
         "name": "Colin Lloyd",
         "details": "Travelling is an amazing experience, but it isn't without bumps and bruises. Whether you have a fall during a hike, become dehydrated due to the sun or simply end up with a dodgy belly, it's good to have something prepared.",
         "img": "https://images.unsplash.com/photo-1617339860293-8c1b58e7c4ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        "time-required": "30s"
+        "day": 1
     }
-  ]
+]
